@@ -17,7 +17,7 @@ struct DogAPIClient {
             return
         }
         let request = URLRequest(url: url)
-        NetworkHelper.shared.performDataTask(with: request, completion: { (result) in
+        NetworkHelper.shared.performDataTask(with: request) { (result) in
             switch result {
             case .failure(let appError):
                 completion(.failure(.networkClientError(appError)))
@@ -30,6 +30,5 @@ struct DogAPIClient {
                 }
             }
         }
-        )
     }
 }
