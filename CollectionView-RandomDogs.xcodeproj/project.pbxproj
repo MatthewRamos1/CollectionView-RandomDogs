@@ -16,6 +16,7 @@
 		0C4CB89023CE1981007D277F /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CB88F23CE1981007D277F /* DogCell.swift */; };
 		0C4CB89223CE1B2A007D277F /* DogAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CB89123CE1B2A007D277F /* DogAPIClient.swift */; };
 		0C4CB89523CE1C04007D277F /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4CB89423CE1C04007D277F /* ImageKit */; };
+		0C4CB89723CE1E1C007D277F /* RandomDogInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CB89623CE1E1C007D277F /* RandomDogInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0C4CB88923CE178A007D277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C4CB88F23CE1981007D277F /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
 		0C4CB89123CE1B2A007D277F /* DogAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIClient.swift; sourceTree = "<group>"; };
+		0C4CB89623CE1E1C007D277F /* RandomDogInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				0C4CB87F23CE1786007D277F /* ViewController.swift */,
 				0C4CB88123CE1786007D277F /* Main.storyboard */,
 				0C4CB88F23CE1981007D277F /* DogCell.swift */,
+				0C4CB89623CE1E1C007D277F /* RandomDogInfo.swift */,
 				0C4CB88423CE178A007D277F /* Assets.xcassets */,
 				0C4CB88623CE178A007D277F /* LaunchScreen.storyboard */,
 				0C4CB89123CE1B2A007D277F /* DogAPIClient.swift */,
@@ -157,6 +160,7 @@
 				0C4CB87C23CE1786007D277F /* AppDelegate.swift in Sources */,
 				0C4CB89023CE1981007D277F /* DogCell.swift in Sources */,
 				0C4CB87E23CE1786007D277F /* SceneDelegate.swift in Sources */,
+				0C4CB89723CE1E1C007D277F /* RandomDogInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
