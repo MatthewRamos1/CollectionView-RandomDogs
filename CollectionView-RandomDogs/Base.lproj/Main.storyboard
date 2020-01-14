@@ -20,19 +20,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gdz-yG-YRG">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="270" height="261"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dogCell" id="amR-ee-F6z">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dogCell" id="amR-ee-F6z" customClass="DogCell" customModule="CollectionView_RandomDogs" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="0.0" width="270" height="261"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HTJ-fA-xCG">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="270" height="261"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y62-tv-Loj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="270" height="261"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="y62-tv-Loj" firstAttribute="leading" secondItem="HTJ-fA-xCG" secondAttribute="leading" id="6Vm-9i-ggs"/>
+                                                <constraint firstAttribute="bottom" secondItem="y62-tv-Loj" secondAttribute="bottom" id="Zw5-xR-ECu"/>
+                                                <constraint firstItem="y62-tv-Loj" firstAttribute="top" secondItem="HTJ-fA-xCG" secondAttribute="top" id="dN6-1C-wMv"/>
+                                                <constraint firstAttribute="trailing" secondItem="y62-tv-Loj" secondAttribute="trailing" id="lMX-PC-vuv"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="270" height="261"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="y62-tv-Loj" id="DMg-D2-nJl"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

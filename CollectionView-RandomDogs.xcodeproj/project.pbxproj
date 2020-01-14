@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		0C4CB88323CE1786007D277F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4CB88123CE1786007D277F /* Main.storyboard */; };
 		0C4CB88523CE178A007D277F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4CB88423CE178A007D277F /* Assets.xcassets */; };
 		0C4CB88823CE178A007D277F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4CB88623CE178A007D277F /* LaunchScreen.storyboard */; };
+		0C4CB89023CE1981007D277F /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CB88F23CE1981007D277F /* DogCell.swift */; };
+		0C4CB89223CE1B2A007D277F /* DogAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CB89123CE1B2A007D277F /* DogAPIClient.swift */; };
+		0C4CB89523CE1C04007D277F /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C4CB89423CE1C04007D277F /* ImageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		0C4CB88423CE178A007D277F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C4CB88723CE178A007D277F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C4CB88923CE178A007D277F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4CB88F23CE1981007D277F /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		0C4CB89123CE1B2A007D277F /* DogAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4CB89523CE1C04007D277F /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +66,10 @@
 				0C4CB87D23CE1786007D277F /* SceneDelegate.swift */,
 				0C4CB87F23CE1786007D277F /* ViewController.swift */,
 				0C4CB88123CE1786007D277F /* Main.storyboard */,
+				0C4CB88F23CE1981007D277F /* DogCell.swift */,
 				0C4CB88423CE178A007D277F /* Assets.xcassets */,
 				0C4CB88623CE178A007D277F /* LaunchScreen.storyboard */,
+				0C4CB89123CE1B2A007D277F /* DogAPIClient.swift */,
 				0C4CB88923CE178A007D277F /* Info.plist */,
 			);
 			path = "CollectionView-RandomDogs";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = "CollectionView-RandomDogs";
+			packageProductDependencies = (
+				0C4CB89423CE1C04007D277F /* ImageKit */,
+			);
 			productName = "CollectionView-RandomDogs";
 			productReference = 0C4CB87823CE1786007D277F /* CollectionView-RandomDogs.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 0C4CB86F23CE1786007D277F;
+			packageReferences = (
+				0C4CB89323CE1C04007D277F /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 0C4CB87923CE1786007D277F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4CB89223CE1B2A007D277F /* DogAPIClient.swift in Sources */,
 				0C4CB88023CE1786007D277F /* ViewController.swift in Sources */,
 				0C4CB87C23CE1786007D277F /* AppDelegate.swift in Sources */,
+				0C4CB89023CE1981007D277F /* DogCell.swift in Sources */,
 				0C4CB87E23CE1786007D277F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C4CB89323CE1C04007D277F /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C4CB89423CE1C04007D277F /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C4CB89323CE1C04007D277F /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C4CB87023CE1786007D277F /* Project object */;
 }
